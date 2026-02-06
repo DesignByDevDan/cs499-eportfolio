@@ -1,1 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Algorithms and Data Structures Artifact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Algorithms and Data Structures</h1>
+      <p><a href="index.html">← Back to Home</a></p>
+    </header>
+
+    <div class="card">
+      <h2>Artifact Overview</h2>
+      <p>
+        This artifact represents the algorithms and data structures component of my CS 499 ePortfolio.
+        It builds upon the system reviewed in Milestone One and focuses on improving the core logic
+        used to evaluate access eligibility and generate “delta” outputs. The enhancement emphasizes
+        correctness, efficiency, and clarity of the decision-making process.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Problem Being Solved</h2>
+      <p>
+        The underlying problem is to recompute access eligibility changes (deltas) based on updated inputs,
+        then determine which changes must be applied downstream. The process must reliably identify additions,
+        removals, and updates while handling real-world data conditions such as incomplete records, timing
+        differences, and repeated runs. The algorithm must be deterministic and maintain consistent results.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Algorithmic Approach and Improvements</h2>
+      <p>
+        The enhancement refines the evaluation and delta-generation logic so that the system minimizes
+        unnecessary recomputation and avoids redundant outputs. The enhanced approach prioritizes set-based
+        processing, reduces repeated scanning of the same data, and enforces a clear sequence of operations:
+        (1) normalize inputs, (2) compute candidate eligibility states, (3) compare current vs prior states,
+        and (4) emit only actionable changes. This results in a more efficient and maintainable algorithm.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Data Structures and Data Handling</h2>
+      <p>
+        Although the implementation is written in SQL, the enhancement still demonstrates data structure
+        thinking through consistent use of keyed datasets (e.g., person identifiers, policy/group identifiers,
+        and effective date windows). The improved logic treats intermediate results as structured sets that can
+        be joined and compared reliably, which reduces complexity and improves correctness of delta detection.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Supporting Algorithm SQL Artifacts</h2>
+      <p>
+        The following SQL artifacts demonstrate the algorithm enhancements. The enhanced version improves
+        the correctness and efficiency of delta computation by clarifying evaluation steps and reducing
+        redundant processing.
+      </p>
+      <ul>
+        <li>
+          <a href="assets/code/algorithms/Algo_rpt.usp_RecomputeAccessDelta.sql" target="_blank">
+            Original Algorithm Implementation
+          </a>
+        </li>
+        <li>
+          <a href="assets/code/algorithms/Algo_Enhanced_rpt.usp_RecomputeAccessDelta.sql" target="_blank">
+            Enhanced Algorithm Implementation
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Use of Instructor Feedback</h2>
+      <p>
+        Feedback from the Milestone One code review was incorporated by improving organization and making the
+        algorithmic rationale more explicit. The enhanced artifact clarifies the processing sequence and better
+        communicates how each step contributes to correctness and performance, making the solution easier to
+        evaluate and maintain.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Course Outcome Alignment</h2>
+      <p>
+        This artifact demonstrates my ability to design and evaluate computing solutions with attention to
+        algorithmic efficiency and correctness. The enhanced logic reflects structured problem solving and
+        improved handling of real-world data conditions, aligning with CS 499 outcomes related to algorithms,
+        data structures, and the evaluation of computing solutions.
+      </p>
+    </div>
+
+    <div class="footer">
+      <p>Published with GitHub Pages.</p>
+    </div>
+  </main>
+</body>
+</html>
 
