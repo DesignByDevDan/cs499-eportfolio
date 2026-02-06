@@ -1,1 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Databases Artifact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Databases</h1>
+      <p><a href="index.html">← Back to Home</a></p>
+    </header>
+
+    <div class="card">
+      <h2>Artifact Overview</h2>
+      <p>
+        This artifact represents the databases component of my CS 499 ePortfolio. It focuses on improving the
+        database layer used to store, evaluate, and report access eligibility changes. The enhancement emphasizes
+        sound relational design, data integrity, and a structure that supports reliable reporting and repeatable
+        processing over time.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Database Context and Role</h2>
+      <p>
+        The database supports an eligibility evaluation workflow where source inputs are transformed into a
+        reporting-ready representation of access status and changes (“deltas”). Because the database serves as
+        the system of record for downstream decisions, the schema and objects must enforce consistency, support
+        efficient querying, and preserve a clear history of computed results.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Database Design Considerations</h2>
+      <p>
+        Key design considerations included maintaining clear separation between operational data and reporting
+        outputs, enforcing consistent keys and relationships, and ensuring that computed results can be audited.
+        The enhanced design improves reliability by organizing objects more clearly, supporting consistent joins,
+        and reducing ambiguity in how access changes are represented.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Enhancements and Improvements</h2>
+      <p>
+        The enhancement improves the database artifact by strengthening how access delta results are structured
+        and produced. Changes focus on improving consistency of the reporting output, supporting predictable
+        queries, and reducing opportunities for data anomalies. This results in a database layer that is easier
+        to maintain and better suited for scalable reporting.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Supporting Database SQL Artifacts</h2>
+      <p>
+        The following SQL artifacts demonstrate the database-focused enhancements. The enhanced version reflects
+        improvements to database structure and reporting reliability.
+      </p>
+      <ul>
+        <li>
+          <a href="assets/code/databases/rpt.AccessDelta.sql" target="_blank">
+            Original Database SQL Artifact
+          </a>
+        </li>
+        <li>
+          <a href="assets/code/databases/rpt.AccessDelta.enhanced.sql" target="_blank">
+            Enhanced Database SQL Artifact
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Use of Instructor Feedback</h2>
+      <p>
+        Feedback from the Milestone One code review was incorporated by making the database rationale clearer
+        and improving how the enhancement is communicated. The enhanced artifact more directly connects the
+        reviewed issues (clarity, organization, and maintainability) to database-layer improvements that support
+        integrity and repeatable reporting outcomes.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Course Outcome Alignment</h2>
+      <p>
+        This artifact demonstrates my ability to apply database principles to design and evaluate a solution that
+        supports reliable data processing and reporting. The enhancement reflects thoughtful schema/object
+        organization, attention to data integrity, and design decisions that improve maintainability and support
+        future scalability—aligning with CS 499 course outcomes related to databases.
+      </p>
+    </div>
+
+    <div class="footer">
+      <p>Published with GitHub Pages.</p>
+    </div>
+  </main>
+</body>
+</html>
 
