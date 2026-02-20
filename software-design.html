@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Software Design and Engineering Artifact</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <main>
@@ -16,94 +16,94 @@
     <div class="card">
       <h2>Artifact Overview</h2>
       <p>
-        This artifact represents the software design and engineering component of
-        my CS 499 ePortfolio. It builds upon the system analyzed in Milestone One
-        and demonstrates how deliberate design decisions and refactoring efforts
-        improve maintainability, clarity, and extensibility of the solution.
+        This artifact represents the <strong>Software Design and Engineering</strong> enhancement area for my CS 499 ePortfolio.
+        The underlying project is the <strong>C-Cure Reporting Database</strong>, a SQL Server solution designed to support
+        compliance-driven access eligibility reporting.
+      </p>
+      <p>
+        I selected this artifact because it demonstrates real-world system design concerns: maintainability, readability,
+        separation of responsibilities, repeatable processing, and clear communication of intent through structure and documentation.
       </p>
     </div>
 
     <div class="card">
-      <h2>Design Goals and Constraints</h2>
+      <h2>Original Functionality</h2>
       <p>
-        The primary design goals for this artifact were to improve code organization,
-        reduce complexity, and clearly separate responsibilities across components.
-        Additional constraints included working within an existing codebase,
-        maintaining compatibility with current data flows, and ensuring the design
-        could scale as system requirements evolve.
+        Before enhancement, the solution supported eligibility evaluation and delta-style reporting outputs.
+        However, logic was tightly coupled, harder to follow, and more difficult to extend safely.
       </p>
     </div>
 
     <div class="card">
-      <h2>Software Design Decisions</h2>
+      <h2>Enhancement Implemented</h2>
       <p>
-        Key design decisions focused on restructuring the code to follow sound
-        software engineering principles, including modularity, separation of
-        concerns, and readability. Logic that was previously tightly coupled was
-        reorganized into clearer functional boundaries, making the system easier
-        to understand, test, and enhance.
+        The enhancement focused on refactoring the stored procedure to improve modularity,
+        separation of concerns, naming clarity, and maintainability without altering
+        intended functional behavior.
       </p>
-    </div>
 
-    <div class="card">
-      <h2>Engineering Improvements and Enhancements</h2>
-      <p>
-        Engineering improvements included refactoring for consistency, improving
-        naming conventions, and clarifying data flow through the system. These
-        changes reduce technical debt and make future enhancements more predictable
-        and less error-prone. The refined design also supports clearer integration
-        points for additional functionality.
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>Supporting Software Design Artifacts</h2>
-      <p>
-        The following SQL artifacts demonstrate the software design and engineering
-        improvements discussed above. The enhanced version reflects refactoring
-        efforts focused on structure, readability, and separation of concerns while
-        preserving existing functionality.
-      </p>
+      <h3>Key Improvements</h3>
       <ul>
-        <li>
-          <a href="assets/code/software-design/rpt.usp_RecomputeAccessDelta.sql" target="_blank">
-            Original Stored Procedure
-          </a>
-        </li>
-        <li>
-          <a href="assets/code/software-design/Enhanced_rpt.usp_RecomputeAccessDelta.sql" target="_blank">
-            Refactored Stored Procedure (Software Design Enhancements)
-          </a>
-        </li>
+        <li>Clearer separation of data preparation and evaluation logic</li>
+        <li>Reduced duplicated logic patterns</li>
+        <li>Improved naming consistency</li>
+        <li>Added intent-focused documentation comments</li>
+        <li>Improved structural readability for safer future modifications</li>
       </ul>
     </div>
 
-
     <div class="card">
-      <h2>Use of Instructor Feedback</h2>
+      <h2>Evidence and Supporting Files</h2>
       <p>
-        Feedback from the Milestone One code review was incorporated to improve
-        the clarity and organization of this artifact. Specifically, the design
-        rationale is now more explicitly documented, and the relationship between
-        the original review findings and the resulting design improvements is
-        clearly articulated.
+        The enhanced stored procedure demonstrating these software design improvements is available below:
+      </p>
+      <ul>
+        <li>
+          <strong>Enhanced Stored Procedure (Software Design Version):</strong><br/>
+          <a href="https://github.com/DesignByDevDan/cs499-eportfolio/blob/main/assets/code/software-design/Enhanced_rpt.usp_RecomputeAccessDelta.sql"
+             target="_blank" rel="noopener">
+             Enhanced_rpt.usp_RecomputeAccessDelta.sql
+          </a>
+        </li>
+      </ul>
+      <p>
+        This version reflects structural refactoring and improved maintainability practices
+        compared to the original implementation.
       </p>
     </div>
 
     <div class="card">
       <h2>Course Outcome Alignment</h2>
+      <ol>
+        <li><strong>Collaborative Environments:</strong> Clearer code structure improves peer review and shared maintenance.</li>
+        <li><strong>Professional Communication:</strong> Structured documentation and readable organization support stakeholder understanding.</li>
+        <li><strong>Algorithmic Trade-offs:</strong> Refactoring balances clarity and performance while reducing future defect risk.</li>
+        <li><strong>Tools and Techniques:</strong> Demonstrates professional SQL Server development and refactoring discipline.</li>
+        <li><strong>Security Mindset:</strong> Improved structure reduces risk of unintended side effects or logic flaws.</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <h2>Reflection</h2>
       <p>
-        This artifact demonstrates my ability to apply software engineering
-        principles to the design and evaluation of computing solutions. It reflects
-        thoughtful decision-making, structured problem solving, and an emphasis
-        on producing maintainable and extensible software systems aligned with
-        CS 499 course outcomes.
+        This enhancement reinforced that high-quality software engineering is not only about producing correct results,
+        but about creating solutions that are understandable, extensible, and safe to evolve. The refactoring process
+        required careful validation to ensure behavior remained consistent while improving structural clarity.
+      </p>
+      <p>
+        This foundation directly supports the algorithmic and database enhancements that follow.
       </p>
     </div>
 
-    <div class="footer">
-      <p>Published with GitHub Pages.</p>
+    <div class="card">
+      <h2>Related Portfolio Sections</h2>
+      <ul>
+        <li><a href="code-review.html">Milestone One: Code Review</a></li>
+        <li><a href="algorithms.html">Algorithms &amp; Data Structures Enhancement</a></li>
+        <li><a href="databases.html">Databases Enhancement</a></li>
+      </ul>
     </div>
+
   </main>
 </body>
 </html>
