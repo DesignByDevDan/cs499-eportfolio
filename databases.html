@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Databases Artifact</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <main>
@@ -16,87 +16,149 @@
     <div class="card">
       <h2>Artifact Overview</h2>
       <p>
-        This artifact represents the databases component of my CS 499 ePortfolio. It focuses on improving the
-        database layer used to store, evaluate, and report access eligibility changes. The enhancement emphasizes
-        sound relational design, data integrity, and a structure that supports reliable reporting and repeatable
-        processing over time.
+        This page documents my <strong>Databases</strong> enhancement for CS 499 using the
+        <strong>C-Cure Reporting Database</strong> artifact. This SQL Server solution supports
+        compliance-driven reporting by producing access eligibility and delta outputs that help
+        identify changes requiring action or review.
+      </p>
+      <p>
+        I selected this artifact for the databases category because it demonstrates practical database
+        engineering concepts used in real systems: schema organization, integrity and consistency controls,
+        performance-aware design, and reporting-focused architecture. These areas are essential when building
+        solutions that must remain reliable and auditable over time.
       </p>
     </div>
 
     <div class="card">
-      <h2>Database Context and Role</h2>
+      <h2>Original Functionality</h2>
       <p>
-        The database supports an eligibility evaluation workflow where source inputs are transformed into a
-        reporting-ready representation of access status and changes (“deltas”). Because the database serves as
-        the system of record for downstream decisions, the schema and objects must enforce consistency, support
-        efficient querying, and preserve a clear history of computed results.
+        The original solution provided core reporting functionality and generated delta outputs based on eligibility
+        evaluation logic. However, there were opportunities to strengthen the database design to improve reliability,
+        clarity, maintainability, and performance as data volume and reporting demands grow.
+      </p>
+      <p>
+        In production-style database solutions, improvements often involve better organization of database objects,
+        stronger integrity enforcement, and performance tuning that reduces execution time and increases predictability.
       </p>
     </div>
 
     <div class="card">
-      <h2>Database Design Considerations</h2>
-      <p>
-        Key design considerations included maintaining clear separation between operational data and reporting
-        outputs, enforcing consistent keys and relationships, and ensuring that computed results can be audited.
-        The enhanced design improves reliability by organizing objects more clearly, supporting consistent joins,
-        and reducing ambiguity in how access changes are represented.
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>Enhancements and Improvements</h2>
-      <p>
-        The enhancement improves the database artifact by strengthening how access delta results are structured
-        and produced. Changes focus on improving consistency of the reporting output, supporting predictable
-        queries, and reducing opportunities for data anomalies. This results in a database layer that is easier
-        to maintain and better suited for scalable reporting.
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>Supporting Database SQL Artifacts</h2>
-      <p>
-        The following SQL artifacts demonstrate the database-focused enhancements. The enhanced version reflects
-        improvements to database structure and reporting reliability.
-      </p>
+      <h2>Database Analysis: Areas Identified for Improvement</h2>
       <ul>
         <li>
-          <a href="assets/code/databases/rpt.AccessDelta.sql" target="_blank">
-            Original Database SQL Artifact
-          </a>
+          <strong>Schema and object organization:</strong> clearer separation of reporting-focused objects and supporting structures
+          improves maintainability and reduces confusion for future development.
         </li>
         <li>
-          <a href="assets/code/databases/rpt.AccessDelta.enhanced.sql" target="_blank">
-            Enhanced Database SQL Artifact
-          </a>
+          <strong>Data integrity and consistency:</strong> enforcing consistency through constraints and controlled patterns reduces risk
+          of inaccurate reporting outputs.
+        </li>
+        <li>
+          <strong>Performance and scalability:</strong> reporting queries and delta comparisons must remain stable as row counts increase,
+          which requires indexing and query patterns that avoid unnecessary scans and expensive operations.
+        </li>
+        <li>
+          <strong>Auditability:</strong> a compliance-driven system benefits from predictable processing and traceable design decisions
+          so results can be explained and validated.
         </li>
       </ul>
     </div>
 
     <div class="card">
-      <h2>Use of Instructor Feedback</h2>
+      <h2>Enhancement Implemented: Databases</h2>
       <p>
-        Feedback from the Milestone One code review was incorporated by making the database rationale clearer
-        and improving how the enhancement is communicated. The enhanced artifact more directly connects the
-        reviewed issues (clarity, organization, and maintainability) to database-layer improvements that support
-        integrity and repeatable reporting outcomes.
+        For the databases enhancement, I improved database design aspects that support long-term reliability and performance.
+        The focus was on strengthening reporting structures and ensuring the artifact reflects best practices used in professional
+        SQL Server environments.
+      </p>
+
+      <h3>Key Improvements</h3>
+      <ul>
+        <li>
+          <strong>Improved reporting-focused structure:</strong> enhanced database objects support clearer reporting behavior and more
+          predictable delta results.
+        </li>
+        <li>
+          <strong>Integrity-minded design:</strong> design decisions emphasize consistent outputs and reduce the chance of invalid or
+          misleading report results.
+        </li>
+        <li>
+          <strong>Performance-aware implementation:</strong> changes support more efficient reporting queries by encouraging selective access
+          patterns and database structures that scale with growth.
+        </li>
+        <li>
+          <strong>Maintainability:</strong> clearer structure and intent make it easier to extend the system and apply future enhancements safely.
+        </li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Evidence: Enhanced Database Implementation</h2>
+      <p>
+        The enhanced database script demonstrating this work is available here:
+      </p>
+      <ul>
+        <li>
+          <strong>Enhanced Database Script (Databases Version):</strong><br/>
+          <a href="https://github.com/DesignByDevDan/cs499-eportfolio/blob/main/assets/code/databases/rpt.AccessDelta.enhanced.sql"
+             target="_blank" rel="noopener">
+            rpt.AccessDelta.enhanced.sql
+          </a>
+        </li>
+      </ul>
+      <p>
+        This file represents the database-focused enhancement work, emphasizing stronger reporting structures and improved database engineering practices.
       </p>
     </div>
 
     <div class="card">
       <h2>Course Outcome Alignment</h2>
+      <ol>
+        <li>
+          <strong>Collaborative environments:</strong> Clear organization and documentation support shared understanding and reduce friction
+          when multiple stakeholders rely on the same reporting outcomes.
+        </li>
+        <li>
+          <strong>Professional communication:</strong> The narrative and structure explain database decisions in a clear, reviewable format.
+        </li>
+        <li>
+          <strong>Algorithmic principles and trade-offs:</strong> Database choices support efficient reporting and delta processing by reducing
+          unnecessary work and improving predictability.
+        </li>
+        <li>
+          <strong>Tools and implementation practices:</strong> Demonstrates use of professional SQL Server database concepts and practices
+          aligned to real operational reporting needs.
+        </li>
+        <li>
+          <strong>Security mindset:</strong> Integrity-minded database design supports controlled, auditable outputs and reduces risk of incorrect
+          or exploitable behavior in compliance-driven reporting.
+        </li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <h2>Reflection</h2>
       <p>
-        This artifact demonstrates my ability to apply database principles to design and evaluate a solution that
-        supports reliable data processing and reporting. The enhancement reflects thoughtful schema/object
-        organization, attention to data integrity, and design decisions that improve maintainability and support
-        future scalability—aligning with CS 499 course outcomes related to databases.
+        This enhancement reinforced that database engineering is more than storing data—it is designing structures that maintain integrity,
+        perform consistently, and support reliable reporting for stakeholders. One challenge in database-focused enhancement work is balancing
+        performance improvements with clarity and auditability. I addressed that by focusing on maintainable structures and predictable patterns
+        that support reporting accuracy while still considering scalability.
+      </p>
+      <p>
+        The enhanced database work complements the other categories: software design improvements make the system easier to maintain, algorithmic
+        improvements improve efficiency, and database enhancements ensure the underlying structures support reliable execution and reporting.
       </p>
     </div>
 
-    <div class="footer">
-      <p>Published with GitHub Pages.</p>
+    <div class="card">
+      <h2>Related Portfolio Sections</h2>
+      <ul>
+        <li><a href="code-review.html">Milestone One: Code Review</a></li>
+        <li><a href="software-design.html">Software Design &amp; Engineering Enhancement</a></li>
+        <li><a href="algorithms.html">Algorithms &amp; Data Structures Enhancement</a></li>
+      </ul>
     </div>
+
   </main>
 </body>
 </html>
-
