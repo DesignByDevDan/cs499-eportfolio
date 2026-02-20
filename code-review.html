@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Milestone One – Code Review</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <title>Milestone One: Code Review</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <main>
@@ -14,61 +14,110 @@
     </header>
 
     <div class="card">
+      <h2>Overview</h2>
       <p>
-        This artifact presents a critical code review of an existing software project
-        selected for enhancement in my CS 499 ePortfolio. The review evaluates the
-        current implementation, identifies areas for improvement, and outlines planned
-        enhancements aligned with course outcomes.
+        This page contains my Milestone One code review for CS 499. The code review explains the existing
+        functionality of my selected artifact (the C-Cure Reporting Database), identifies areas for improvement,
+        and describes the enhancement plan that guided my work across the three required categories:
+        Software Design &amp; Engineering, Algorithms &amp; Data Structures, and Databases.
       </p>
-
       <p>
-        This code review has been revised based on instructor feedback from Milestone
-        One to improve clarity, organization, and explicit alignment with course
-        outcomes. The review more clearly explains the rationale for planned enhancements
-        and demonstrates how each enhancement will strengthen the artifact across
-        software design, algorithms, and database considerations.
+        The intended audience for this review is a peer developer or manager. The goal is to communicate how the
+        system works today, why changes were needed, and what enhancements were implemented to improve quality,
+        maintainability, performance, and security.
       </p>
     </div>
 
-    <h2>Code Review Video</h2>
     <div class="card">
-      <video controls>
-        <source src="https://pub-4e03b5bfb05d47cb9e449d688316035a.r2.dev/Milestone%20One%20Code%20Review.mp4" type="video/mp4">
+      <h2>Code Review Video</h2>
+
+      <!-- My direct MP4 hosting -->
+      <video controls width="100%">
+        <source src="https://pub-4e03b5bfb05d47cb9e449d688316035a.r2.dev/Milestone%20One%20Code%20Review.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
       <p>
-        <a href="https://pub-4e03b5bfb05d47cb9e449d688316035a.r2.dev/Milestone%20One%20Code%20Review.mp4"
-           target="_blank" rel="noopener">
+        <a href="https://pub-4e03b5bfb05d47cb9e449d688316035a.r2.dev/Milestone%20One%20Code%20Review.mp4" target="_blank" rel="noopener">
           Open video in a new tab
         </a>
       </p>
+
     </div>
 
-    <h2>Summary of Review</h2>
     <div class="card">
+      <h2>What the Review Covers</h2>
       <ul>
-        <li>Overview of the selected artifact and its purpose</li>
-        <li>Evaluation of software design and overall code structure</li>
-        <li>Assessment of algorithmic logic and data handling</li>
-        <li>Review of database design considerations and data flow</li>
-        <li>Identification of specific areas targeted for enhancement</li>
+        <li><strong>Existing functionality:</strong> What the database solution does, its core objects, and how eligibility/delta outputs are produced.</li>
+        <li><strong>Code analysis:</strong> Where structure, clarity, reliability, and maintainability could be improved.</li>
+        <li><strong>Planned enhancements:</strong> A clear plan for improvements across software design, algorithms, and database engineering.</li>
       </ul>
-    </div>
-
-    <h2>Course Outcome Alignment</h2>
-    <div class="card">
       <p>
-        This code review demonstrates my ability to evaluate computing solutions using
-        sound software engineering principles, analyze existing implementations, and plan
-        meaningful enhancements that align with the CS 499 course outcomes across software
-        design, algorithms and data structures, and databases.
+        This structure matches the Milestone One expectations: explain how the system works, identify improvement areas,
+        then present an enhancement plan aligned to course outcomes.
       </p>
     </div>
 
-    <div class="footer">
-      <p>Published with GitHub Pages.</p>
+    <div class="card">
+      <h2>Planned Enhancements Summarized</h2>
+
+      <h3>Software Design &amp; Engineering</h3>
+      <ul>
+        <li>Refactor complex logic into clearer, more maintainable structure</li>
+        <li>Improve naming consistency and separation of concerns</li>
+        <li>Increase readability so future changes are safer and faster</li>
+      </ul>
+
+      <h3>Algorithms &amp; Data Structures</h3>
+      <ul>
+        <li>Improve efficiency of delta detection (reduce redundant processing)</li>
+        <li>Clarify evaluation steps to ensure deterministic results</li>
+        <li>Document trade-offs between performance and maintainability</li>
+      </ul>
+
+      <h3>Databases</h3>
+      <ul>
+        <li>Strengthen data integrity and reporting reliability</li>
+        <li>Improve schema/object organization to support auditing and repeatable processing</li>
+        <li>Support scalability through clearer structures and performance-aware design</li>
+      </ul>
     </div>
+
+    <div class="card">
+      <h2>Course Outcome Alignment (Explicit)</h2>
+      <ol>
+        <li>
+          <strong>Collaborative environments:</strong>
+          This review is structured for peers/managers to support shared understanding and decision making about next steps.
+        </li>
+        <li>
+          <strong>Professional communication:</strong>
+          The walkthrough and this page provide clear, organized explanation of the system, improvement areas, and plan.
+        </li>
+        <li>
+          <strong>Algorithmic principles and trade-offs:</strong>
+          The review identifies opportunities to improve efficiency and correctness and explains why the planned approach is appropriate.
+        </li>
+        <li>
+          <strong>Tools and implementation practices:</strong>
+          The review demonstrates practical use of SQL Server concepts and structured engineering practices to deliver real reporting value.
+        </li>
+        <li>
+          <strong>Security mindset:</strong>
+          The review considers integrity, controlled access patterns, and risk-aware design choices to reduce vulnerabilities in a compliance-driven system.
+        </li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <h2>Related Portfolio Sections</h2>
+      <ul>
+        <li><a href="software-design.html">Software Design &amp; Engineering Enhancement</a></li>
+        <li><a href="algorithms.html">Algorithms &amp; Data Structures Enhancement</a></li>
+        <li><a href="databases.html">Databases Enhancement</a></li>
+      </ul>
+    </div>
+
   </main>
 </body>
 </html>
