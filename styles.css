@@ -88,3 +88,33 @@ video{
   font-size: 0.9rem;
   color: var(--muted);
 }
+
+/* Simple top navigation */
+.nav {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.nav a {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.03);
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: none;
+  color: var(--text);
+  border-color: rgba(255,255,255,0.18);
+}
+
+.nav a.active {
+  color: var(--text);
+  border-color: rgba(138,180,255,0.45);
+  background: rgba(138,180,255,0.10);
+}
